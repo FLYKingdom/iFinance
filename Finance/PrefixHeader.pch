@@ -1,0 +1,87 @@
+//
+//  PrefixHeader.pch
+//  Finance
+//
+//  Created by mac on 2017/9/16.
+//  Copyright © 2017年 FlyYardAppStore. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <Masonry/Masonry.h>
+#import <TMCache/TMCache.h>
+#import "HexColor.h"
+
+#import "TBCityIconFont.h"
+#import <ChameleonFramework/Chameleon.h>
+
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+#define DefaultBackgroundColor [UIColor whiteColor]//[UIColor colorWithRed:251.0/255 green:249.0/255 blue:249.0/255 alpha:1.0f]
+#define DefaultMainColor   [UIColor colorWithRed:77.0/255 green:191.0/255 blue:246.0/255 alpha:1.000]//#4dbff6
+#define DefaultBGColor RGBA(243, 246, 250, 1.0)
+#define DarkerMainColor     [UIColor colorWithRed:72.0/255.0f green:153.0/255.0f blue:246.0/255.0f alpha:1]
+#define LightMainColor     [UIColor colorWithRed:77.0/255 green:191.0/255 blue:246.0/255 alpha:0.400]
+#define DefaultGrayColor    [UIColor colorWithRed:199.0/255 green:205.0/255 blue:209.0/255 alpha:1.0f]
+#define NavigationColor    [UIColor colorWithWhite:1.0f alpha:1.0f]
+#define NavigationTintColor  [UIColor colorWithRed:77.0/255 green:191.0/255 blue:246.0/255 alpha:1.000]
+
+
+#define DefaultMainBackgroundColor [UIColor colorWithWhite:1.0 alpha:0.95f]
+
+#define SeperatorColor   [UIColor colorWithWhite:0.88f alpha:1.0f]
+#define DefaultFontColor    [UIColor colorWithWhite:0.30 alpha:1.0f]
+#define LightFontColor      [UIColor colorWithWhite:0.50 alpha:1.0f]
+#define BrightFontColor      [UIColor colorWithWhite:0.75 alpha:1.0f]
+#define TitleFontSize           22
+#define SubTitleFontSize        18
+#define DefaultMainFontSize     15
+#define PrompFontSize           13
+
+#define   BaseURLString  @"http://www.ifly.com/api/v1/"
+#define ImageURLString @"http://image.ifly.com/"
+#define   HomeURL         @"http://www.ifly.com/"
+
+#define   FontName     @"STHeitiSC-Light"
+#define   BoldFontName @"STHeitiJ-Medium"
+//#define   FontName     @"FZLTXHK--GBK1-0"
+//#define   BoldFontName @"FZLTXHK--GBK1-0"
+#define   PaddingBorder 12
+
+#define   ItemHeight 46
+#define   DefaultCornerRadius 2.2f
+
+#define NetWorkErrorStr @"网络链接错误，请检查您的网络后重试"
+
+#define kDeviceWidth [UIScreen mainScreen].bounds.size.width
+#define KDeviceHeight [UIScreen mainScreen].bounds.size.height
+#define MaskLayerBackground [UIColor colorWithWhite:0 alpha:0.5]
+
+#define RiseColor [UIColor flatRedColor]
+#define FallColor [UIColor flatGreenColor]
+
+#define IOS7_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+#define IOS11_OR_LATER @available(iOS 11.0, *)
+#define IPHONE_6_OR_LARGER (kDeviceWidth>320.0)
+
+#ifndef IS_IPAD
+#define IS_IPAD   ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+#endif
+#ifndef IS_IPHONE
+#define IS_IPHONE   (!IS_IPAD)
+#endif
+#ifndef IS_RETINA
+#define IS_RETINA ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] && [[UIScreen mainScreen] scale] == 2)
+#endif
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+
+#endif
