@@ -87,6 +87,7 @@
 		049AF33820EBAB71000ABB25 /* PGPickerColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049AF33220EBAB71000ABB25 /* PGPickerColumnView.m */; };
 		049AF33920EBAB71000ABB25 /* PGPickerTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049AF33420EBAB71000ABB25 /* PGPickerTableView.m */; };
 		049AF33A20EBAB71000ABB25 /* PGPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049AF33620EBAB71000ABB25 /* PGPickerView.m */; };
+		04A5F937216CA9E200FEB098 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5F935216CA9E200FEB098 /* UIButton+Extension.m */; };
 		04BAAAAE20BB9B9A00A1A7AB /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BAAAAD20BB9B9A00A1A7AB /* iconfont.ttf */; };
 		04BAAAB920BB9BEB00A1A7AB /* HQFontImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BAAAB220BB9BEB00A1A7AB /* HQFontImage.m */; };
 		04BAAABA20BB9BEB00A1A7AB /* TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BAAAB420BB9BEB00A1A7AB /* TBCityIconFont.m */; };
@@ -97,6 +98,7 @@
 		04D05A3B20DD4E1800FDBF9F /* EarningModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D05A3A20DD4E1800FDBF9F /* EarningModel.m */; };
 		04D05A3E20DD51C400FDBF9F /* PlatformModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D05A3D20DD51C400FDBF9F /* PlatformModel.m */; };
 		04E5DFB820B5AC5D00E082BA /* MyUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E5DFB720B5AC5C00E082BA /* MyUtility.m */; };
+		04E6D88021699B3B002A2DBD /* ComputerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E6D87F21699B3B002A2DBD /* ComputerViewController.m */; };
 		04E85CB220E8C52E0008D53A /* InfoPropertyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85CB120E8C52E0008D53A /* InfoPropertyView.m */; };
 		04E85CB920E8C62A0008D53A /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85CB820E8C62A0008D53A /* GradientView.m */; };
 		04E8A3F720DEB24C00A5AB30 /* FoundHoldListVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8A3F620DEB24C00A5AB30 /* FoundHoldListVc.m */; };
@@ -164,7 +166,7 @@
 		0499BB1A1F6D0C7200B6B84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0499BB1B1F6D0C7200B6B84B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0499BB241F6D0C7200B6B84B /* Finance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finance.xcdatamodel; sourceTree = "<group>"; };
-		0499BB261F6D0C7200B6B84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
+		0499BB261F6D0C7200B6B84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0499BB291F6D0C7200B6B84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0499BB2B1F6D0C7200B6B84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0499BB301F6D0C7200B6B84B /* FinanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -284,6 +286,8 @@
 		049AF33420EBAB71000ABB25 /* PGPickerTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPickerTableView.m; sourceTree = "<group>"; };
 		049AF33520EBAB71000ABB25 /* PGPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPickerView.h; sourceTree = "<group>"; };
 		049AF33620EBAB71000ABB25 /* PGPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPickerView.m; sourceTree = "<group>"; };
+		04A5F933216CA9E100FEB098 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		04A5F935216CA9E200FEB098 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		04BAAAAD20BB9B9A00A1A7AB /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		04BAAAB120BB9BEB00A1A7AB /* HQFontImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQFontImage.h; sourceTree = "<group>"; };
 		04BAAAB220BB9BEB00A1A7AB /* HQFontImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQFontImage.m; sourceTree = "<group>"; };
@@ -303,6 +307,8 @@
 		04D05A3D20DD51C400FDBF9F /* PlatformModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlatformModel.m; sourceTree = "<group>"; };
 		04E5DFB620B5AC5C00E082BA /* MyUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUtility.h; sourceTree = "<group>"; };
 		04E5DFB720B5AC5C00E082BA /* MyUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUtility.m; sourceTree = "<group>"; };
+		04E6D87E21699B3B002A2DBD /* ComputerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComputerViewController.h; sourceTree = "<group>"; };
+		04E6D87F21699B3B002A2DBD /* ComputerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComputerViewController.m; sourceTree = "<group>"; };
 		04E85CB020E8C52E0008D53A /* InfoPropertyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoPropertyView.h; sourceTree = "<group>"; };
 		04E85CB120E8C52E0008D53A /* InfoPropertyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoPropertyView.m; sourceTree = "<group>"; };
 		04E85CB720E8C62A0008D53A /* GradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
@@ -448,6 +454,8 @@
 				0433F47120DD59880084EFBE /* FoundDetailViewController.m */,
 				0433F47220DD59880084EFBE /* PlatformListVc.h */,
 				0433F47320DD59880084EFBE /* PlatformListVc.m */,
+				04E6D87E21699B3B002A2DBD /* ComputerViewController.h */,
+				04E6D87F21699B3B002A2DBD /* ComputerViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -484,6 +492,7 @@
 				0499BB511F6D0E3100B6B84B /* Utiles */,
 				0499BB1A1F6D0C7200B6B84B /* AppDelegate.h */,
 				0499BB1B1F6D0C7200B6B84B /* AppDelegate.m */,
+				0499BB261F6D0C7200B6B84B /* Assets.xcassets */,
 				0499BB281F6D0C7200B6B84B /* LaunchScreen.storyboard */,
 				0499BB2B1F6D0C7200B6B84B /* Info.plist */,
 				0499BB231F6D0C7200B6B84B /* Finance.xcdatamodeld */,
@@ -536,6 +545,8 @@
 			isa = PBXGroup;
 			children = (
 				049AF2E120EBA9B1000ABB25 /* PGDatePicker */,
+				04A5F933216CA9E100FEB098 /* UIButton+Extension.h */,
+				04A5F935216CA9E200FEB098 /* UIButton+Extension.m */,
 				04E5DFB620B5AC5C00E082BA /* MyUtility.h */,
 				04E5DFB720B5AC5C00E082BA /* MyUtility.m */,
 				0499BBC31F6D2FC700B6B84B /* UILabel+Extension.h */,
@@ -558,7 +569,6 @@
 				0499BB581F6D0ECF00B6B84B /* Views */,
 				0499BB541F6D0ECF00B6B84B /* MainPageViewController.h */,
 				0499BB551F6D0ECF00B6B84B /* MainPageViewController.m */,
-				0499BB261F6D0C7200B6B84B /* Assets.xcassets */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -1262,6 +1272,7 @@
 				0499BBA91F6D19E500B6B84B /* RefreshHeader.m in Sources */,
 				049AF33A20EBAB71000ABB25 /* PGPickerView.m in Sources */,
 				0499BB871F6D150700B6B84B /* StaticCellModel.m in Sources */,
+				04E6D88021699B3B002A2DBD /* ComputerViewController.m in Sources */,
 				0408FCB520E0970700900089 /* RealityEntranceVc.m in Sources */,
 				049AF33920EBAB71000ABB25 /* PGPickerTableView.m in Sources */,
 				04D05A3E20DD51C400FDBF9F /* PlatformModel.m in Sources */,
@@ -1301,6 +1312,7 @@
 				049AF32020EBA9B1000ABB25 /* PGDatePicker+MonthDay.m in Sources */,
 				0408FCB920E0D0DC00900089 /* HomeBoardView.m in Sources */,
 				0499BBBF1F6D232600B6B84B /* AssetsModel.m in Sources */,
+				04A5F937216CA9E200FEB098 /* UIButton+Extension.m in Sources */,
 				049AF32920EBA9B1000ABB25 /* PGDatePicker.m in Sources */,
 				0499BBA71F6D19E500B6B84B /* RefreshActivity.m in Sources */,
 				0499BB851F6D150700B6B84B /* EditAtomModel.m in Sources */,

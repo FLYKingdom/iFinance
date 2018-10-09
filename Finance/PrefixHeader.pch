@@ -67,6 +67,10 @@
 #define RiseColor [UIColor flatRedColor]
 #define FallColor [UIColor flatGreenColor]
 
+#define StatusBarHeight CGRectGetHeight([[UIApplication sharedApplication] statusBarFrame])
+#define IsIPhoneX ((44 - StatusBarHeight >= 0.00001)?NO:YES)
+#define BottomStatusSep (IsIPhoneX?34:0)
+
 #define IOS7_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
 #define IOS11_OR_LATER @available(iOS 11.0, *)
 #define IPHONE_6_OR_LARGER (kDeviceWidth>320.0)

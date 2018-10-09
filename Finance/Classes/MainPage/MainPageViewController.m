@@ -18,6 +18,8 @@
 
 #import "HomeBoardView.h"
 
+#import "ComputerViewController.h"
+
 @interface MainPageViewController ()<UIScrollViewDelegate>
 
 @end
@@ -39,13 +41,20 @@
 #pragma mark - setupUI
 
 - (void)setupNavigationBar {
-    UIButton *addBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
+    UIButton *addBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
     [addBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
     UIImage *itemImg = [UIImage iconWithInfo:TBCityIconInfoMake(@"\U0000e60a", 25, LightFontColor)];
     [addBtn setImage:itemImg forState:UIControlStateNormal];
     [addBtn addTarget:self action:@selector(addInfoClicked) forControlEvents:UIControlEventTouchUpInside];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:addBtn];
+    UIButton *editBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [editBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
+    [editBtn setImage:[UIImage iconWithInfo:TBCityIconInfoMake(@"\U0000e642", 32, LightFontColor)] forState:UIControlStateNormal];
+    [editBtn addTarget:self action:@selector(computeClicked) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithCustomView:addBtn];
+    UIBarButtonItem *editItem = [[UIBarButtonItem alloc] initWithCustomView:editBtn];
+    self.navigationItem.rightBarButtonItems = @[addItem,editItem];
 }
 
 - (void)setupUI {
@@ -108,6 +117,11 @@
 }
 
 #pragma mark - Event
+
+- (void)computeClicked {
+    ComputerViewController *vc = [[ComputerViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)gotoVcWithName:(NSString *) vcName{
     Class myClass = NSClassFromString(vcName);
