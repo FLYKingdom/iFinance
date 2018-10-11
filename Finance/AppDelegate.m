@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainPageViewController.h"
-
+#import "CacheManager.h"
 @interface AppDelegate ()
 
 @end
@@ -23,6 +23,9 @@
     
     //初始化ICONFONT
     [TBCityIconFont setFontName:@"iconfont"];
+    
+    //初始化 平台列表
+    [CacheManager initializePlatformTable];
     
     return YES;
 }

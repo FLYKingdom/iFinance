@@ -12,12 +12,15 @@
 #import "AssetsCell.h"
 #import "AddNewAssetsVc.h"
 #import "UIColor+Chameleon.h"
+#import "PlatformModel.h"
 
 #import "FoundDetailViewController.h"
 #import "EarningListViewController.h"
 
 #import "TOPasscodeViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>
+
+#import "PlatformHistoryVc.h"
 
 @interface PlatformHoldListVc ()<UIScrollViewDelegate,TOPasscodeViewControllerDelegate>
 
@@ -39,7 +42,7 @@
     
     [self getDataFromServer];
     
-    [self showPasscodeView];
+//    [self showPasscodeView];
 }
 
 #pragma mark - setupUI
@@ -65,7 +68,7 @@
     
     self.authContext = [[LAContext alloc] init];
     
-    BaseTableView *tableView = [[BaseTableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped cellClass:@"AssetsCell"];
+    BaseTableView *tableView = [[BaseTableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped cellClass:@"PlatformHoldCell"];
     self.tableView = tableView;
     [tableView setBackgroundColor:DefaultBGColor];
     
@@ -79,8 +82,13 @@
     tableView.tableViewDidClicked = ^(NSInteger infoID, BaseModel *model) {
         //        FoundDetailViewController *vc = [[FoundDetailViewController alloc] init];
         //        vc.foundID = infoID;
-        EarningListViewController *vc = [[EarningListViewController alloc] init];
+//        EarningListViewController *vc = [[EarningListViewController alloc] init];
+//        [weakSelf.navigationController pushViewController:vc animated:YES];
+        
+        PlatformHistoryVc *vc = [[PlatformHistoryVc alloc] init];
+        vc.platformId = infoID;
         [weakSelf.navigationController pushViewController:vc animated:YES];
+        
     };
     
     [self.view addSubview:tableView];
@@ -111,7 +119,10 @@
 }
 
 - (void)addNewRecord {
-    AddNewAssetsVc *vc = [[AddNewAssetsVc alloc] init];
+//    AddNewAssetsVc *vc = [[AddNewAssetsVc alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
+    Class vcClass = NSClassFromString(@"AddPlatformHistoryVc");
+    BaseViewController *vc = [[vcClass alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -179,39 +190,23 @@
 #pragma mark - Net
 
 - (void)getDataFromServer {
-    //    @property (nonatomic, copy) NSString *platform;//平台
-    //
-    //    @property (nonatomic, assign) NSTimeInterval startTime;
-    //
-    //    @property (nonatomic, assign) NSTimeInterval endTime;
-    //
-    //    @property (nonatomic, assign) double amount;
-    //
-    //
-    //    @property (nonatomic, assign) double endEraning;
-    //
-    //    @property (nonatomic, assign) double dayEraning;
-    //
-    //    @property (nonatomic, copy) NSString *eraningRatio;
     
-    NSArray *assetList = @[@{@"platform":@"拍拍贷",@"startTime":@"7月21日",@"endTime":@"9月21日",@"amount":@(3000),@"dayEraning":@(0),@"endEraning":@(36),@"eraningRatio":@"7.2%"},@{@"platform":@"拍拍贷",@"startTime":@"7月21日",@"endTime":@"10月21日",@"amount":@(10000),@"dayEraning":@(0),@"endEraning":@(185),@"eraningRatio":@"7.4%"},@{@"platform":@"人人贷",@"startTime":@"7月19日",@"endTime":@"9月19日",@"amount":@(8000),@"dayEraning":@(0),@"endEraning":@(73.67),@"eraningRatio":@"10%"},@{@"platform":@"人人贷",@"startTime":@"9月3日",@"endTime":@"12月5日",@"amount":@(5000),@"dayEraning":@(0),@"endEraning":@(82.58),@"eraningRatio":@"6.6%"},@{@"platform":@"爱钱进",@"startTime":@"7月10日",@"endTime":@"10月10日",@"amount":@(35888),@"dayEraning":@(8.28),@"endEraning":@(160),@"eraningRatio":@"7%"},@{@"platform":@"玖富",@"startTime":@"8月11日",@"endTime":@"11月11日",@"amount":@(10000),@"dayEraning":@(2.4),@"endEraning":@(196),@"eraningRatio":@"8%"},@{@"platform":@"51人品",@"startTime":@"8月30日",@"endTime":@"11月30日",@"amount":@(10022.54),@"dayEraning":@(0),@"endEraning":@(100),@"eraningRatio":@"7%"},@{@"platform":@"口袋理财",@"startTime":@"9月13日",@"endTime":@"9月28日",@"amount":@(8000),@"dayEraning":@(0),@"endEraning":@(32.88),@"eraningRatio":@"10%"},@{@"platform":@"口袋记账",@"startTime":@"9月1日",@"endTime":@"10月1日",@"amount":@(5000),@"dayEraning":@(0),@"endEraning":@(30),@"eraningRatio":@"6%"},@{@"platform":@"理财魔方",@"startTime":@"9月1日",@"endTime":@"9月1日",@"amount":@(5000),@"dayEraning":@(0),@"endEraning":@(100),@"eraningRatio":@"10%"},@{@"platform":@"京东金融",@"startTime":@"now",@"endTime":@"next year",@"amount":@(28000),@"dayEraning":@(0),@"endEraning":@(0),@"eraningRatio":@"4%"},@{@"platform":@"支付宝",@"startTime":@"now",@"endTime":@"next year",@"amount":@(10000),@"dayEraning":@(0),@"endEraning":@(100),@"eraningRatio":@"4%"},@{@"platform":@"腾讯理财通",@"startTime":@"now",@"endTime":@"next year",@"amount":@(10000),@"dayEraning":@(0),@"endEraning":@(100),@"eraningRatio":@"4%"}];
+//    NSArray *assetList = @[@{@"platform":@"拍拍贷",@"startTime":@"7月21日",@"endTime":@"9月21日",@"amount":@(3000),@"dayEraning":@(0),@"endEraning":@(36),@"eraningRatio":@"7.2%"},@{@"platform":@"拍拍贷",@"startTime":@"7月21日",@"endTime":@"10月21日",@"amount":@(10000),@"dayEraning":@(0),@"endEraning":@(185),@"eraningRatio":@"7.4%"},@{@"platform":@"人人贷",@"startTime":@"7月19日",@"endTime":@"9月19日",@"amount":@(8000),@"dayEraning":@(0),@"endEraning":@(73.67),@"eraningRatio":@"10%"},@{@"platform":@"人人贷",@"startTime":@"9月3日",@"endTime":@"12月5日",@"amount":@(5000),@"dayEraning":@(0),@"endEraning":@(82.58),@"eraningRatio":@"6.6%"},@{@"platform":@"爱钱进",@"startTime":@"7月10日",@"endTime":@"10月10日",@"amount":@(35888),@"dayEraning":@(8.28),@"endEraning":@(160),@"eraningRatio":@"7%"},@{@"platform":@"玖富",@"startTime":@"8月11日",@"endTime":@"11月11日",@"amount":@(10000),@"dayEraning":@(2.4),@"endEraning":@(196),@"eraningRatio":@"8%"},@{@"platform":@"51人品",@"startTime":@"8月30日",@"endTime":@"11月30日",@"amount":@(10022.54),@"dayEraning":@(0),@"endEraning":@(100),@"eraningRatio":@"7%"},@{@"platform":@"口袋理财",@"startTime":@"9月13日",@"endTime":@"9月28日",@"amount":@(8000),@"dayEraning":@(0),@"endEraning":@(32.88),@"eraningRatio":@"10%"},@{@"platform":@"口袋记账",@"startTime":@"9月1日",@"endTime":@"10月1日",@"amount":@(5000),@"dayEraning":@(0),@"endEraning":@(30),@"eraningRatio":@"6%"},@{@"platform":@"理财魔方",@"startTime":@"9月1日",@"endTime":@"9月1日",@"amount":@(5000),@"dayEraning":@(0),@"endEraning":@(100),@"eraningRatio":@"10%"},@{@"platform":@"京东金融",@"startTime":@"now",@"endTime":@"next year",@"amount":@(28000),@"dayEraning":@(0),@"endEraning":@(0),@"eraningRatio":@"4%"},@{@"platform":@"支付宝",@"startTime":@"now",@"endTime":@"next year",@"amount":@(10000),@"dayEraning":@(0),@"endEraning":@(100),@"eraningRatio":@"4%"},@{@"platform":@"腾讯理财通",@"startTime":@"now",@"endTime":@"next year",@"amount":@(10000),@"dayEraning":@(0),@"endEraning":@(100),@"eraningRatio":@"4%"}];
+
+    NSArray *plafromList = [CacheManager getInfoWithKey:PlatformInfoTableKey];
     
-    NSMutableArray *tmpArr = [NSMutableArray arrayWithCapacity:assetList.count];
-    
-    for (NSDictionary *dict in assetList) {
-        AssetsModel *model = [[AssetsModel alloc] initWithDictionary:dict];
-        [tmpArr addObject:model];
-    }
-    
-    self.tableView.dataArray = [BaseTableView getDateMatrixWithArr: tmpArr];
+    self.tableView.dataArray = [BaseTableView getDateMatrixWithArr: plafromList];
     
     double totalValue = 0;
-    for (NSDictionary *record in assetList) {
-        NSString *amount = [record objectForKey:@"amount"];
-        totalValue += [amount doubleValue];
+    double earningValue = 0;
+    for (PlatformModel *record in plafromList) {
+        totalValue += record.total;
+        earningValue += record.earning;
     }
     
-    [self setupNavigationTitle:[NSString stringWithFormat:@"总计:%.02lf",totalValue]];
+    NSString *sign = earningValue >= 0?@"+":@"-";
+    
+    [self setupNavigationTitle:[NSString stringWithFormat:@"总计:%.02lf %@%.02lf",totalValue,sign,earningValue]];
 }
 
 #pragma mark - life method

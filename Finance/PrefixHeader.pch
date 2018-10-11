@@ -18,6 +18,7 @@
 #import <Masonry/Masonry.h>
 #import <TMCache/TMCache.h>
 #import "HexColor.h"
+#import "CacheManager.h"
 
 #import "TBCityIconFont.h"
 #import <ChameleonFramework/Chameleon.h>

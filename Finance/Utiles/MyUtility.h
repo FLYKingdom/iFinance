@@ -56,8 +56,6 @@ MyUtility : NSObject
 /**
  @method 获取指定宽度情况下，字符串value的size
  @param value 待计算的字符串
- @param fontSize 字体
- @param andWidth 限制字符串显示区域的宽度
  @result float 返回的size
  */
 +(CGSize) rectForString:(NSString *)value font:(UIFont *) font andWidth:(float) width;

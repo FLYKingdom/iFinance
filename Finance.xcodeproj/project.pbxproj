@@ -19,6 +19,10 @@
 		0433F47820DD59880084EFBE /* FoundDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0433F47120DD59880084EFBE /* FoundDetailViewController.m */; };
 		0433F47920DD59880084EFBE /* PlatformListVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0433F47320DD59880084EFBE /* PlatformListVc.m */; };
 		0433F47C20DD5C2D0084EFBE /* EarningListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0433F47B20DD5C2D0084EFBE /* EarningListCell.m */; };
+		04695D31216ED4880053B234 /* AddPlatformHistoryVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 04695D30216ED4880053B234 /* AddPlatformHistoryVc.m */; };
+		04695D34216EDB390053B234 /* PlatformHoldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04695D33216EDB390053B234 /* PlatformHoldCell.m */; };
+		0470D61A216ED1B20029341B /* PlatformModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470D619216ED1B10029341B /* PlatformModel.m */; };
+		0470D61D216ED2D30029341B /* PlatformHistoryVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470D61C216ED2D30029341B /* PlatformHistoryVc.m */; };
 		0499BB191F6D0C7200B6B84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499BB181F6D0C7200B6B84B /* main.m */; };
 		0499BB1C1F6D0C7200B6B84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499BB1B1F6D0C7200B6B84B /* AppDelegate.m */; };
 		0499BB251F6D0C7200B6B84B /* Finance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0499BB231F6D0C7200B6B84B /* Finance.xcdatamodeld */; };
@@ -96,7 +100,6 @@
 		04D05A3520DD424A00FDBF9F /* HoldingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D05A3420DD424A00FDBF9F /* HoldingModel.m */; };
 		04D05A3820DD4D0900FDBF9F /* FixInVestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D05A3720DD4D0900FDBF9F /* FixInVestModel.m */; };
 		04D05A3B20DD4E1800FDBF9F /* EarningModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D05A3A20DD4E1800FDBF9F /* EarningModel.m */; };
-		04D05A3E20DD51C400FDBF9F /* PlatformModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D05A3D20DD51C400FDBF9F /* PlatformModel.m */; };
 		04E5DFB820B5AC5D00E082BA /* MyUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E5DFB720B5AC5C00E082BA /* MyUtility.m */; };
 		04E6D88021699B3B002A2DBD /* ComputerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E6D87F21699B3B002A2DBD /* ComputerViewController.m */; };
 		04E85CB220E8C52E0008D53A /* InfoPropertyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85CB120E8C52E0008D53A /* InfoPropertyView.m */; };
@@ -161,6 +164,14 @@
 		0433F47320DD59880084EFBE /* PlatformListVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformListVc.m; sourceTree = "<group>"; };
 		0433F47A20DD5C2D0084EFBE /* EarningListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EarningListCell.h; sourceTree = "<group>"; };
 		0433F47B20DD5C2D0084EFBE /* EarningListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarningListCell.m; sourceTree = "<group>"; };
+		04695D2F216ED4880053B234 /* AddPlatformHistoryVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPlatformHistoryVc.h; sourceTree = "<group>"; };
+		04695D30216ED4880053B234 /* AddPlatformHistoryVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddPlatformHistoryVc.m; sourceTree = "<group>"; };
+		04695D32216EDB390053B234 /* PlatformHoldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformHoldCell.h; sourceTree = "<group>"; };
+		04695D33216EDB390053B234 /* PlatformHoldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlatformHoldCell.m; sourceTree = "<group>"; };
+		0470D618216ED1B10029341B /* PlatformModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformModel.h; sourceTree = "<group>"; };
+		0470D619216ED1B10029341B /* PlatformModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformModel.m; sourceTree = "<group>"; };
+		0470D61B216ED2D30029341B /* PlatformHistoryVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformHistoryVc.h; sourceTree = "<group>"; };
+		0470D61C216ED2D30029341B /* PlatformHistoryVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlatformHistoryVc.m; sourceTree = "<group>"; };
 		0499BB141F6D0C7200B6B84B /* Finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0499BB181F6D0C7200B6B84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0499BB1A1F6D0C7200B6B84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -303,8 +314,6 @@
 		04D05A3720DD4D0900FDBF9F /* FixInVestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixInVestModel.m; sourceTree = "<group>"; };
 		04D05A3920DD4E1800FDBF9F /* EarningModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EarningModel.h; sourceTree = "<group>"; };
 		04D05A3A20DD4E1800FDBF9F /* EarningModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarningModel.m; sourceTree = "<group>"; };
-		04D05A3C20DD51C400FDBF9F /* PlatformModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformModel.h; sourceTree = "<group>"; };
-		04D05A3D20DD51C400FDBF9F /* PlatformModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlatformModel.m; sourceTree = "<group>"; };
 		04E5DFB620B5AC5C00E082BA /* MyUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUtility.h; sourceTree = "<group>"; };
 		04E5DFB720B5AC5C00E082BA /* MyUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUtility.m; sourceTree = "<group>"; };
 		04E6D87E21699B3B002A2DBD /* ComputerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComputerViewController.h; sourceTree = "<group>"; };
@@ -456,6 +465,10 @@
 				0433F47320DD59880084EFBE /* PlatformListVc.m */,
 				04E6D87E21699B3B002A2DBD /* ComputerViewController.h */,
 				04E6D87F21699B3B002A2DBD /* ComputerViewController.m */,
+				0470D61B216ED2D30029341B /* PlatformHistoryVc.h */,
+				0470D61C216ED2D30029341B /* PlatformHistoryVc.m */,
+				04695D2F216ED4880053B234 /* AddPlatformHistoryVc.h */,
+				04695D30216ED4880053B234 /* AddPlatformHistoryVc.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -584,8 +597,6 @@
 				04D05A3720DD4D0900FDBF9F /* FixInVestModel.m */,
 				04D05A3920DD4E1800FDBF9F /* EarningModel.h */,
 				04D05A3A20DD4E1800FDBF9F /* EarningModel.m */,
-				04D05A3C20DD51C400FDBF9F /* PlatformModel.h */,
-				04D05A3D20DD51C400FDBF9F /* PlatformModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -603,6 +614,8 @@
 				04E85CB120E8C52E0008D53A /* InfoPropertyView.m */,
 				04EA70F220E8EC0900D3F624 /* InfoDisplayView.h */,
 				04EA70F320E8EC0900D3F624 /* InfoDisplayView.m */,
+				04695D32216EDB390053B234 /* PlatformHoldCell.h */,
+				04695D33216EDB390053B234 /* PlatformHoldCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -838,6 +851,8 @@
 		04E85CB420E8C6090008D53A /* models */ = {
 			isa = PBXGroup;
 			children = (
+				0470D618216ED1B10029341B /* PlatformModel.h */,
+				0470D619216ED1B10029341B /* PlatformModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -1271,17 +1286,19 @@
 				04E99FE520E3C66200FE2C14 /* StockHoldListVc.m in Sources */,
 				0499BBA91F6D19E500B6B84B /* RefreshHeader.m in Sources */,
 				049AF33A20EBAB71000ABB25 /* PGPickerView.m in Sources */,
+				04695D31216ED4880053B234 /* AddPlatformHistoryVc.m in Sources */,
 				0499BB871F6D150700B6B84B /* StaticCellModel.m in Sources */,
 				04E6D88021699B3B002A2DBD /* ComputerViewController.m in Sources */,
 				0408FCB520E0970700900089 /* RealityEntranceVc.m in Sources */,
 				049AF33920EBAB71000ABB25 /* PGPickerTableView.m in Sources */,
-				04D05A3E20DD51C400FDBF9F /* PlatformModel.m in Sources */,
 				04F3EDEE20DBDDDB003BDDA0 /* AFBingoAPIClient.m in Sources */,
 				049AF32320EBA9B1000ABB25 /* PGDatePicker+MonthDayHourMinuteSecond.m in Sources */,
 				049AF31620EBA9B1000ABB25 /* NSCalendar+PGCurrent.m in Sources */,
 				04D05A3820DD4D0900FDBF9F /* FixInVestModel.m in Sources */,
+				0470D61A216ED1B20029341B /* PlatformModel.m in Sources */,
 				04BAAABC20BB9BEB00A1A7AB /* UIImage+TBCityIconFont.m in Sources */,
 				04BAAABA20BB9BEB00A1A7AB /* TBCityIconFont.m in Sources */,
+				04695D34216EDB390053B234 /* PlatformHoldCell.m in Sources */,
 				0499BBC51F6D2FC700B6B84B /* UILabel+Extension.m in Sources */,
 				049AF31520EBA9B1000ABB25 /* NSBundle+PGDatePicker.m in Sources */,
 				049AF33720EBAB71000ABB25 /* PGPickerColumnCell.m in Sources */,
@@ -1299,6 +1316,7 @@
 				04F3EDFA20DBE062003BDDA0 /* ShareMethodManager.m in Sources */,
 				0433F47520DD59880084EFBE /* EarningListViewController.m in Sources */,
 				0499BB8C1F6D150700B6B84B /* BaseTableViewCell.m in Sources */,
+				0470D61D216ED2D30029341B /* PlatformHistoryVc.m in Sources */,
 				0499BBBB1F6D1B5000B6B84B /* HexColor.m in Sources */,
 				0433F47820DD59880084EFBE /* FoundDetailViewController.m in Sources */,
 				049AF32220EBA9B1000ABB25 /* PGDatePicker+MonthDayHourMinute.m in Sources */,

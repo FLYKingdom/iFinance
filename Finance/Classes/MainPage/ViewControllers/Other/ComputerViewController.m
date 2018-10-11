@@ -207,6 +207,15 @@
     self.results = [[NSMutableArray alloc] initWithObjects:@"name",@"name", nil];
 }
 
+#pragma mark - compute
+
+- (void)compute {
+    //1. 求投资期限
+    
+    //2. 求到期收益率
+    
+}
+
 #pragma mark - collectionview  associate method
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
