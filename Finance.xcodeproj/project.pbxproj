@@ -1043,7 +1043,6 @@
 				TargetAttributes = {
 					0499BB131F6D0C7200B6B84B = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 28LE6T643Z;
 						ProvisioningStyle = Automatic;
 					};
 					0499BB2F1F6D0C7200B6B84B = {
@@ -1499,11 +1498,11 @@
 			baseConfigurationReference = CFBA8BDC4081B03DC37CD8D1 /* Pods-Finance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 28LE6T643Z;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = Finance/PrefixHeader.pch;
 				INFOPLIST_FILE = Finance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhaosha.zhaoshautils;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iFly.iFinance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1513,11 +1512,11 @@
 			baseConfigurationReference = 655AA4E0027D44E6F4EDB115 /* Pods-Finance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 28LE6T643Z;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = Finance/PrefixHeader.pch;
 				INFOPLIST_FILE = Finance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhaosha.zhaoshautils;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iFly.iFinance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
