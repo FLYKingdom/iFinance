@@ -49,7 +49,7 @@
     
     UIButton *editBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
     [editBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
-    [editBtn setImage:[UIImage iconWithInfo:TBCityIconInfoMake(@"\U0000e642", 32, LightFontColor)] forState:UIControlStateNormal];
+    [editBtn setImage:[UIImage iconWithInfo:TBCityIconInfoMake(@"\U0000e642", 25, LightFontColor)] forState:UIControlStateNormal];
     [editBtn addTarget:self action:@selector(computeClicked) forControlEvents:UIControlEventTouchUpInside];
     
     UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithCustomView:addBtn];
