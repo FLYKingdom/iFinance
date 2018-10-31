@@ -7,7 +7,7 @@ Home
 ---
 
 <p align="center">
-  <img src="https://github.com/FLYKingdom/iFinance/blob/master/Pictures/iFinance1.jpeg"/>
+  <img src="https://github.com/FLYKingdom/iFinance/blob/master/Pictures/iFinance1.jpeg" width=360 height=667/>
 </p>
 
 PlatformHolding
@@ -31,11 +31,11 @@ Earning
 list
 
 <p align="center">
-  <img src="https://github.com/FLYKingdom/iFinance/blob/master/Pictures/iFinance2.jpeg"/>
+  <img src="https://github.com/FLYKingdom/iFinance/blob/master/Pictures/iFinance2.jpeg" width=360 height=667/>
 </p>
 
 add new earning info
 
 <p align="center">
-  <img src="https://github.com/FLYKingdom/iFinance/blob/master/Pictures/iFinance3.jpeg"/>
+  <img src="https://github.com/FLYKingdom/iFinance/blob/master/Pictures/iFinance3.jpeg" width=360 height=667/>
 </p>
