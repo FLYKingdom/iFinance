@@ -58,7 +58,7 @@
 }
 
 - (void)setupUI {
-    NSArray *infos = @[@{@"title":@"平台",@"vcClass":@"PlatformHoldListVc",@"subTitle":@"说明: 现有支付宝、微信、天天基金、理财魔方、京东等平台"},@{@"title":@"基金",@"vcClass":@"FoundHoldListVc",@"subTitle":@"说明: 用于更好的管理基金组合"},@{@"title":@"股票",@"vcClass":@"StockHoldListVc",@"subTitle":@"说明: 现持有通威股份股票"},@{@"title":@"定投",@"vcClass":@"EarningListViewController",@"subTitle":@"说明: 现有定投方案，计算每月投资支出"},@{@"title":@"收藏",@"vcClass":@"CollectFoundListVc",@"subTitle":@"说明: 收藏牛熊以及振荡期表现不错的基金"},@{@"title":@"收益",@"vcClass":@"EarningListViewController",@"subTitle":@"说明: 落袋为安，才是真的受益，否则你看到的只是个数字而已"}];
+    NSArray *infos = @[@{@"title":@"平台",@"vcClass":@"PlatformHoldListVc",@"subTitle":@"说明: 现有支付宝、微信、天天基金、理财魔方、京东等平台"},@{@"title":@"基金",@"vcClass":@"FoundHoldListVc",@"subTitle":@"说明: 用于更好的管理基金组合"},@{@"title":@"股票",@"vcClass":@"StockHoldListVc",@"subTitle":@"说明: 现持有通威股份股票"},@{@"title":@"定投",@"vcClass":@"FixedInvestmentVc",@"subTitle":@"说明: 现有定投方案，计算每月投资支出"},@{@"title":@"收藏",@"vcClass":@"CollectFoundListVc",@"subTitle":@"说明: 收藏牛熊以及振荡期表现不错的基金"},@{@"title":@"收益",@"vcClass":@"EarningListViewController",@"subTitle":@"说明: 落袋为安，才是真的受益，否则你看到的只是个数字而已"}];
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     scrollView.scrollEnabled = YES;
     self.view = scrollView;

@@ -23,6 +23,7 @@
 		04695D34216EDB390053B234 /* PlatformHoldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04695D33216EDB390053B234 /* PlatformHoldCell.m */; };
 		0470D61A216ED1B20029341B /* PlatformModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470D619216ED1B10029341B /* PlatformModel.m */; };
 		0470D61D216ED2D30029341B /* PlatformHistoryVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470D61C216ED2D30029341B /* PlatformHistoryVc.m */; };
+		048DF5DF21898879000C1175 /* FixedInvestmentVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 048DF5DE21898879000C1175 /* FixedInvestmentVc.m */; };
 		0499BB191F6D0C7200B6B84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499BB181F6D0C7200B6B84B /* main.m */; };
 		0499BB1C1F6D0C7200B6B84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499BB1B1F6D0C7200B6B84B /* AppDelegate.m */; };
 		0499BB251F6D0C7200B6B84B /* Finance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0499BB231F6D0C7200B6B84B /* Finance.xcdatamodeld */; };
@@ -100,6 +101,7 @@
 		04D05A3520DD424A00FDBF9F /* HoldingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D05A3420DD424A00FDBF9F /* HoldingModel.m */; };
 		04D05A3820DD4D0900FDBF9F /* FixInVestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D05A3720DD4D0900FDBF9F /* FixInVestModel.m */; };
 		04D05A3B20DD4E1800FDBF9F /* EarningModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D05A3A20DD4E1800FDBF9F /* EarningModel.m */; };
+		04E4DCBC2189B3FE0024CEE1 /* AddFixedInvestmentVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E4DCBB2189B3FE0024CEE1 /* AddFixedInvestmentVc.m */; };
 		04E5DFB820B5AC5D00E082BA /* MyUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E5DFB720B5AC5C00E082BA /* MyUtility.m */; };
 		04E6D88021699B3B002A2DBD /* ComputerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E6D87F21699B3B002A2DBD /* ComputerViewController.m */; };
 		04E85CB220E8C52E0008D53A /* InfoPropertyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85CB120E8C52E0008D53A /* InfoPropertyView.m */; };
@@ -172,6 +174,8 @@
 		0470D619216ED1B10029341B /* PlatformModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformModel.m; sourceTree = "<group>"; };
 		0470D61B216ED2D30029341B /* PlatformHistoryVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformHistoryVc.h; sourceTree = "<group>"; };
 		0470D61C216ED2D30029341B /* PlatformHistoryVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlatformHistoryVc.m; sourceTree = "<group>"; };
+		048DF5DD21898879000C1175 /* FixedInvestmentVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FixedInvestmentVc.h; sourceTree = "<group>"; };
+		048DF5DE21898879000C1175 /* FixedInvestmentVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixedInvestmentVc.m; sourceTree = "<group>"; };
 		0499BB141F6D0C7200B6B84B /* Finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0499BB181F6D0C7200B6B84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0499BB1A1F6D0C7200B6B84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -314,6 +318,8 @@
 		04D05A3720DD4D0900FDBF9F /* FixInVestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixInVestModel.m; sourceTree = "<group>"; };
 		04D05A3920DD4E1800FDBF9F /* EarningModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EarningModel.h; sourceTree = "<group>"; };
 		04D05A3A20DD4E1800FDBF9F /* EarningModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarningModel.m; sourceTree = "<group>"; };
+		04E4DCBA2189B3FE0024CEE1 /* AddFixedInvestmentVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddFixedInvestmentVc.h; sourceTree = "<group>"; };
+		04E4DCBB2189B3FE0024CEE1 /* AddFixedInvestmentVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddFixedInvestmentVc.m; sourceTree = "<group>"; };
 		04E5DFB620B5AC5C00E082BA /* MyUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUtility.h; sourceTree = "<group>"; };
 		04E5DFB720B5AC5C00E082BA /* MyUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUtility.m; sourceTree = "<group>"; };
 		04E6D87E21699B3B002A2DBD /* ComputerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComputerViewController.h; sourceTree = "<group>"; };
@@ -450,6 +456,8 @@
 				04E99FE420E3C66200FE2C14 /* StockHoldListVc.m */,
 				04E99FE620E3C78B00FE2C14 /* CollectFoundListVc.h */,
 				04E99FE720E3C78B00FE2C14 /* CollectFoundListVc.m */,
+				048DF5DD21898879000C1175 /* FixedInvestmentVc.h */,
+				048DF5DE21898879000C1175 /* FixedInvestmentVc.m */,
 			);
 			path = Holding;
 			sourceTree = "<group>";
@@ -469,6 +477,8 @@
 				0470D61C216ED2D30029341B /* PlatformHistoryVc.m */,
 				04695D2F216ED4880053B234 /* AddPlatformHistoryVc.h */,
 				04695D30216ED4880053B234 /* AddPlatformHistoryVc.m */,
+				04E4DCBA2189B3FE0024CEE1 /* AddFixedInvestmentVc.h */,
+				04E4DCBB2189B3FE0024CEE1 /* AddFixedInvestmentVc.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1274,6 +1284,7 @@
 				049AF31E20EBA9B1000ABB25 /* PGDatePicker+Logic.m in Sources */,
 				0433F47620DD59880084EFBE /* AddHoldingViewController.m in Sources */,
 				0499BB821F6D150700B6B84B /* BaseModel.m in Sources */,
+				048DF5DF21898879000C1175 /* FixedInvestmentVc.m in Sources */,
 				0499BB591F6D0ECF00B6B84B /* MainPageViewController.m in Sources */,
 				049AF31720EBA9B1000ABB25 /* NSDate+PGCategory.m in Sources */,
 				04E85CB920E8C62A0008D53A /* GradientView.m in Sources */,
@@ -1344,6 +1355,7 @@
 				049AF31B20EBA9B1000ABB25 /* PGDatePicker+DateHour.m in Sources */,
 				0499BB811F6D150700B6B84B /* AtomModel.m in Sources */,
 				04F3EDF020DBDDDB003BDDA0 /* MainPageService.m in Sources */,
+				04E4DCBC2189B3FE0024CEE1 /* AddFixedInvestmentVc.m in Sources */,
 				04F3EDF420DBDDDB003BDDA0 /* SquareService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
