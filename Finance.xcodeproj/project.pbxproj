@@ -19,6 +19,8 @@
 		0433F47820DD59880084EFBE /* FoundDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0433F47120DD59880084EFBE /* FoundDetailViewController.m */; };
 		0433F47920DD59880084EFBE /* PlatformListVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0433F47320DD59880084EFBE /* PlatformListVc.m */; };
 		0433F47C20DD5C2D0084EFBE /* EarningListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0433F47B20DD5C2D0084EFBE /* EarningListCell.m */; };
+		044881442190207800BDBE3E /* BaseInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044881432190207800BDBE3E /* BaseInputView.m */; };
+		044881472190209A00BDBE3E /* BaseInputItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044881462190209A00BDBE3E /* BaseInputItemView.m */; };
 		04695D31216ED4880053B234 /* AddPlatformHistoryVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 04695D30216ED4880053B234 /* AddPlatformHistoryVc.m */; };
 		04695D34216EDB390053B234 /* PlatformHoldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04695D33216EDB390053B234 /* PlatformHoldCell.m */; };
 		0470D61A216ED1B20029341B /* PlatformModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470D619216ED1B10029341B /* PlatformModel.m */; };
@@ -166,6 +168,10 @@
 		0433F47320DD59880084EFBE /* PlatformListVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformListVc.m; sourceTree = "<group>"; };
 		0433F47A20DD5C2D0084EFBE /* EarningListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EarningListCell.h; sourceTree = "<group>"; };
 		0433F47B20DD5C2D0084EFBE /* EarningListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarningListCell.m; sourceTree = "<group>"; };
+		044881422190207800BDBE3E /* BaseInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseInputView.h; sourceTree = "<group>"; };
+		044881432190207800BDBE3E /* BaseInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseInputView.m; sourceTree = "<group>"; };
+		044881452190209A00BDBE3E /* BaseInputItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseInputItemView.h; sourceTree = "<group>"; };
+		044881462190209A00BDBE3E /* BaseInputItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseInputItemView.m; sourceTree = "<group>"; };
 		04695D2F216ED4880053B234 /* AddPlatformHistoryVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPlatformHistoryVc.h; sourceTree = "<group>"; };
 		04695D30216ED4880053B234 /* AddPlatformHistoryVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddPlatformHistoryVc.m; sourceTree = "<group>"; };
 		04695D32216EDB390053B234 /* PlatformHoldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformHoldCell.h; sourceTree = "<group>"; };
@@ -483,6 +489,17 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		044881412190204500BDBE3E /* EditView */ = {
+			isa = PBXGroup;
+			children = (
+				044881422190207800BDBE3E /* BaseInputView.h */,
+				044881432190207800BDBE3E /* BaseInputView.m */,
+				044881452190209A00BDBE3E /* BaseInputItemView.h */,
+				044881462190209A00BDBE3E /* BaseInputItemView.m */,
+			);
+			path = EditView;
+			sourceTree = "<group>";
+		};
 		0499BB0B1F6D0C7200B6B84B = {
 			isa = PBXGroup;
 			children = (
@@ -633,6 +650,7 @@
 		0499BB5A1F6D150700B6B84B /* BaseClasses */ = {
 			isa = PBXGroup;
 			children = (
+				044881412190204500BDBE3E /* EditView */,
 				0408FCBA20E0D11C00900089 /* BaseFinanceView */,
 				0499BB901F6D19E500B6B84B /* CustomLoading */,
 				0499BB5B1F6D150700B6B84B /* BaseModels */,
@@ -1278,10 +1296,12 @@
 				04E5DFB820B5AC5D00E082BA /* MyUtility.m in Sources */,
 				049AF32420EBA9B1000ABB25 /* PGDatePicker+Time.m in Sources */,
 				049AF32520EBA9B1000ABB25 /* PGDatePicker+TimeAndSecond.m in Sources */,
+				044881472190209A00BDBE3E /* BaseInputItemView.m in Sources */,
 				04BAAABB20BB9BEB00A1A7AB /* TBCityIconInfo.m in Sources */,
 				049AF32A20EBA9B1000ABB25 /* PGDatePickerView.m in Sources */,
 				04F3EDF220DBDDDB003BDDA0 /* OtherService.m in Sources */,
 				049AF31E20EBA9B1000ABB25 /* PGDatePicker+Logic.m in Sources */,
+				044881442190207800BDBE3E /* BaseInputView.m in Sources */,
 				0433F47620DD59880084EFBE /* AddHoldingViewController.m in Sources */,
 				0499BB821F6D150700B6B84B /* BaseModel.m in Sources */,
 				048DF5DF21898879000C1175 /* FixedInvestmentVc.m in Sources */,
@@ -1502,7 +1522,7 @@
 				GCC_PREFIX_HEADER = Finance/PrefixHeader.pch;
 				INFOPLIST_FILE = Finance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iFly.iFinance;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ifly.ifinance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1516,7 +1536,7 @@
 				GCC_PREFIX_HEADER = Finance/PrefixHeader.pch;
 				INFOPLIST_FILE = Finance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iFly.iFinance;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ifly.ifinance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

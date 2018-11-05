@@ -26,10 +26,8 @@
 }
 */
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+-(instancetype)initWithFrame:(CGRect)frame commonStyle:(BOOL)hasStyle{
     self = [super initWithFrame:frame];
-    
     if (self) {
         self.layer.masksToBounds = YES;
         self.layer.cornerRadius = 5;
@@ -42,6 +40,16 @@
         [self mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(container);
         }];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    
+    if (self) {
+        
     }
     return self;
 }

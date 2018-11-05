@@ -49,8 +49,8 @@
     
 }
 
--(instancetype)init{
-    self = [super init];
+-(instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame commonStyle:YES];
     
     if (self) {
         [self setupUI];

@@ -11,4 +11,6 @@
 
 @interface BaseFinanceView : UIView
 
+- (instancetype)initWithFrame:(CGRect)frame commonStyle:(BOOL) hasStyle;
+
 @end
