@@ -70,7 +70,7 @@
     }
     [lab setText:name];
     [lab setTextColor:color];
-    [lab setFont:[UIFont systemFontOfSize:font]];
+    [lab setFont:[UIFont fontWithName:FontName size:font]];
     [lab sizeToFit];
     
     return lab;

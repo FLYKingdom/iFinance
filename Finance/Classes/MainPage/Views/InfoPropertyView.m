@@ -132,7 +132,7 @@
     [tipLab setText:tipStr];
     [tipLab setFont:[UIFont fontWithName:FontName size:DefaultMainFontSize]];
     [tipLab setTextAlignment:NSTextAlignmentCenter];
-    tipLab.textColor=[UIColor lightGrayColor];
+    tipLab.textColor = [UIColor lightGrayColor];
     
     CGFloat sepHeight = height*(1-0.618);
     UIView *sepView = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetWidth(tipLab.frame)-0.5-DefaultMainFontSize/2, CGRectGetMidY(tipLab.frame)-sepHeight/2, 0.5, sepHeight)];
